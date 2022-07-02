@@ -1,0 +1,580 @@
+body {
+    font-family: 'Mulish', sans-serif;
+    width: 100vw;
+    height: 100%;
+    background: #F5F5F5;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.header__container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.block-social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 24px 0 10px 0;
+    align-items: center;
+}
+
+.block__socialnetwork>* {
+    margin-right: 40px;
+}
+
+.block-users>* {
+    margin-right: 40px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-list>*:not(:last-child) {
+    margin-right: 80px;
+}
+.nav-link {
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-link-home {
+    color: #EDA3B5;
+    position: relative;
+}
+
+.underline-home {
+    position: absolute;
+    left: 13px;
+    top: 40px;
+}
+
+/* main dress-look  */
+
+.dress-look {
+    background-image: url(./img/hero.svg);
+    background-size: cover;
+    padding: 103px 0 118px 164px;
+    box-sizing: border-box;
+    height: 500px;
+    margin-bottom: 71px;
+}
+h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+}
+
+.content-dress-look {
+    width: 446px;
+    height: 90px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
+.show-more-btn {
+    width: 255px;
+    height: 77px;
+    background: #1B2437;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+}
+
+/* main gallery-collection */
+
+.all-center-sections {
+    padding: 0 165px;
+    box-sizing: border-box;
+}
+
+.gallery-collection {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.women-colection-1block {
+
+    background-image: url(./img/women_collection_category.svg);
+    background-size: cover;
+    border-radius: 16px;
+    grid-column: span 1;
+    grid-row: span 2;
+    padding-left: 32px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.women-colection-1block h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-top: 268px;
+}
+
+.women-colection-1block p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+.btn-popular-link {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    margin: 8px 320px 32px 0px;
+    width: 93px;
+    text-align: center;
+}
+
+.women-colection-2block {
+
+    background-image: url(./img/white_women.svg);
+    background-size: cover;
+    border-radius: 16px;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.women-colection-2block p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1B2437;
+    margin-top: 53px;
+    margin-left: 22px;
+}
+
+.women-colection-2block h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    color: #1B2437;
+    margin-left: 22px;
+}
+
+.dresses-block {
+
+    background-image: url(./img/dresses_category.svg);
+    background-size: cover;
+    border-radius: 16px;
+    grid-column: span 1;
+    grid-row: span 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.dresses-block p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-top: 53px;
+    margin-left: 39px;
+}
+
+.dresses-block h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-left: 39px;
+}
+
+.denim-jackets-block {
+    background-image: url(./img/denim_jackets_category.svg);
+    background-size: cover;
+    border-radius: 16px;
+    grid-column: span 2;
+    grid-row: span 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.denim-jackets-block p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #1B2437;
+    margin-top: 64px;
+    margin-left: 22px;
+
+}
+
+.denim-jackets-block h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 45px;
+    color: #1B2437;
+    margin-left: 22px;
+    margin-bottom: 8px;
+
+}
+
+/* brand-collection */
+
+.brand-colection-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    padding: 17px 0 24px 0;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+[class*="__block-white"] {
+    display: inline-block;
+    height: 207px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sandals__block-white {
+    background-image: url(./img/1.svg);
+}
+
+.shirt__block-white {
+    background-image: url(./img/2.svg);
+}
+
+.bag__block-white {
+    background-image: url(./img/3.svg);
+}
+
+.dress__block-white {
+    background-image: url(./img/4.svg);
+}
+
+[class*="__text"] {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-align: center;
+}
+
+.points-all {
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+
+}
+
+.points-all a+a {
+    margin-left: 12px;
+}
+
+[class*="__point"] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #EFEFF4;
+    margin-top: 24px;
+}
+
+.block__point-pink {
+    background: #EDA3B5;
+}
+
+
+/* you-may-like PRODUCTS */
+
+[class*="__titles"] {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67px;
+    color: #1B2437;
+    margin: 70px 0 35px 0;
+}
+
+.all__products_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.one__product_item {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row;
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.big-image {
+    height: 270px;
+
+}
+
+.big-image img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+
+.img__like {
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    top: 12px;
+    right: 12px;
+    left: auto;
+
+}
+
+.block__products_title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 16px 0 8px 24px;
+}
+
+.block__products_content {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 24px;
+}
+
+.bottom_bts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 27px 24px 18px 18px;
+}
+
+.for__cost {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+[class*="__btn"] {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    width: 153px;
+    height: 58px;
+    background: #1B2437;
+    border-radius: 15px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[class*=_pink] {
+    background: #EDA3B5;
+}
+
+/* Contacts  */
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    text-align: center;
+    row-gap: 20px;
+    background: #FFFFFF;
+    padding: 12px 12px 25px 12px;
+    border-radius: 16px;
+}
+
+.map {
+    grid-column: span 3;
+}
+
+
+.map-pointer {
+    position: absolute;
+    top: 255px;
+    left: 431px;
+}
+
+/* Footer */
+
+.all-footer-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* column-gap: 5px; */
+    row-gap: 22px;
+    padding: 45px 165px 50px 165px;
+    background: #FFFFFF;
+    margin-top: 70px;
+}
+
+.footer-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.footer-content,
+.footer-link {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #5C5C5C;
+    list-style: none;
+}
+
+
+.footer-link,
+.footer-title {
+    padding-left: 126px;
+}
+
+.bottom-line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.copyright {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #8E8E93;
+    background: #E5E5EA;
+    padding: 22px 0 22px 165px;
+}
+
+.block__socialnetwork-footer {
+    background: #E5E5EA;
+    padding: 22px 165px 22px 0;
+    text-align: right;
+}
+
+.block__socialnetwork-footer>* {
+    margin-left: 40px;
+}
+
+/* :hover-section */
+
+
+.block__socialnetwork a:hover,
+.block-users a:hover,
+.header_menu a:hover,
+.block__socialnetwork-footer>*:hover {
+    cursor: pointer;
+    transition: 250ms;
+    border-radius: 8px;
+    background: rgba(151, 151, 151, 0.257);
+    padding: 10px;
+}
+
+.show-more-btn:hover {
+    cursor: pointer;
+    background: #2a3855;
+    transition: 250ms;
+    transform: scale(1.1);
+    box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.women-colection-1block:hover,
+.women-colection-2block:hover,
+.dresses-block:hover:hover,
+.denim-jackets-block:hover {
+    cursor: pointer;
+    transition: 200ms;
+    filter: brightness(70%);
+    padding-left: 5%;
+}
+
+[class*="__block-white"]:hover {
+    border: 1px solid black;
+}
+
+[class*="__text"]:hover,
+.footer-link:hover {
+    cursor: pointer;
+    color: #EDA3B5;
+}
+
+.block__point:hover,
+.img__like:hover {
+    transform: scale(1.4);
+}
+
+.all__btn_shop:hover,
+.all__btn_pink:hover {
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+
+.info:hover,
+.map-pointer:hover {
+    transform: scale(1.2);
+}
